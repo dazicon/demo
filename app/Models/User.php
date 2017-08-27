@@ -46,6 +46,7 @@ class User extends Model implements AuthenticatableContract,
         });
     }
 
+
     public function gravatar($size = '100')
     {
         $hash = md5(strtolower(trim($this->attributes['email'])));
